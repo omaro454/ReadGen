@@ -40,12 +40,6 @@ The user is prompted with questions regarding their project. When answered, the 
 * Inquirer
 * fs
 
-## Licenses
-* MIT  
-* Apache  
-* ISC  
-* OBSD
-
 ## Contribution
 * Omar Orrantia
 
