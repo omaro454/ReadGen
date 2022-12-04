@@ -46,10 +46,17 @@ THEN I am taken to the corresponding section of the README
 
 ![Screenshot](./assets/screeno.png)
 
-## Contact Information
+## Licenses
+* MIT  
+* Apache  
+* ISC  
+* OBSD
 
-GitHub username: Omaro454
+## Contribution
+* Omar Orrantia
 
 GitHub profile: [Link to Profile](https://github.com/omaro454/ReadGen)
 
 Email: omar.o454@gmail.com for questions.
+
+Email: omar.o454@gmail.com
