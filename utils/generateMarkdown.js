@@ -31,7 +31,6 @@ This project is licensed under the ${license} license.`;
 function generateMarkdown(data) {
   const {title, description, installation, usage, licenses, contributors, tests, username, email} = data
   return `
-${generatebadges(licenses)}
 # ${title}
 ## Description
 ${description}
@@ -47,9 +46,9 @@ ${installation}
 ## Usage
 ${usage}
 ## Licenses
-${generateObjectList(licenses)}
+
 ## Contributing
-${generateList(contributors)}
+
 ## Tests
 ${tests}
 ## Questions

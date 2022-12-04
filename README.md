@@ -1,59 +1,55 @@
-# Professional README Generator
-
-[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
-
-
-
-![License](https://img.shields.io/static/v1?label=License&message=MIT&color=BLUE) ![License](https://img.shields.io/static/v1?label=License&message=Apache&color=BLUE) ![License](https://img.shields.io/static/v1?label=License&message=ISC&color=BLUE) ![License](https://img.shields.io/static/v1?label=License&message=OBSD&color=BLUE)
-
-# README Generator
-
+# README File Generator
 
 ## Description
-This application was developed with the intention of generating a professional README file. 
+
+This challenge was done to create an application that runs in your terminal to create a README.md file. It generates markdown code via prompts asked in the terminal.
+
+## User Story
+```md
+AS A developer
+I WANT a README generator
+SO THAT I can quickly create a professional README for a new project
+```
+
+### Acceptance Criteria
+
+```md
+GIVEN a command-line application that accepts user input
+WHEN I am prompted for information about my application repository
+THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+WHEN I enter my project title
+THEN this is displayed as the title of the README
+WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
+THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
+WHEN I choose a license for my application from a list of options
+THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
+WHEN I enter my GitHub username
+THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
+WHEN I enter my email address
+THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
+WHEN I click on the links in the Table of Contents
+THEN I am taken to the corresponding section of the README
+```
 
 ## Table of Contents
 
-* [Installation](#installation)
-* [Usage](#usage)
-* [Screenshot](#screenshot)
-* [Features](#features)
-* [License](#license)
-* [Contribution](#contribution)
-* [Questions](#questions)
-
+- [Installation](#installation)
+- [Screenshots] (#screenshots)
+- [Contact Information](#contactinfo)
 
 ## Installation
-Install npm (Inquirer and fs)
 
-## Usage
-The user is prompted with questions regarding their project. When answered, the inputs are written into the file and creates the desired README.
+'npm i' in a Terminal to install packages.
+'node index' to start app.
 
-## Screenshot
-![Screenshot Example](./images/Screen123.png)
+## Screenshots
 
-## Features
-* JavaScript
-* ShieldsIO (for badges)
-* NPM
-* Node.js
-* Inquirer
-* fs
+![Screenshot](./assets/screeno.png)
 
-## Licenses
-* MIT  
-* Apache  
-* ISC  
-* OBSD
+## Contact Information
 
-## Contribution
-* Omar Orrantia
+GitHub username: Omaro454
 
+GitHub profile: [Link to Profile](https://github.com/omaro454/ReadGen)
 
-## Questions
-Contact information for questions:  
-
-
-Github: [Omar Orrantia](https://www.github.com/omaro454)  
-
-Email: omar.o454@gmail.com
+Email: omar.o454@gmail.com for questions.

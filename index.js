@@ -2,24 +2,22 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js')
+const fileName = "README.md"
 // TODO: Create an array of questions for user input
-const questions = () => {
-    data = []
-    return inquirer.prompt([
+const questions = ([
     
-        {
-            type: 'input',
-            name: 'title',
-            message: 'What is the project title? (Required)',
-            validate: titleinput => {
-                if (titleinput) {
-                    return true;
-                } else {
-                    console.log('Please enter a title!')
-                    return false;
-                }
-            }
-        },
+        // {
+        //     type: 'input',
+        //     name: 'title',
+        //     message: 'What is the project title? (Required)',
+        //     validate: titleinput => {
+        //         if (titleinput) {
+        //             return true;
+        //         } else {
+        //             console.log('Please enter a title!')
+        //             return false;
+        //         }
+    
         {
             type: 'input',
             name: 'description',
@@ -71,21 +69,24 @@ const questions = () => {
         }
     ])
 
-};
-
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
-  }
-  
+function writeFile(fileName, data){
+    
+    const markdownjs = generateMarkdown(data);
+    fs.writeFile(fileName, markdownjs, function (err){
+    
+        if (err) {
+            console.log('this does not work')
+        }
+    })
+}
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions).then((inquirerResponses) => {
-      console.log('Generating README...');
-      writeToFile('README.md', generateMarkdown({ ...inquirerResponses }));
-    });
-  }
-  
+    inquirer.prompt(questions)
+.then (function (data) {
+    writeFile(fileName, data)
+})
+}
 // Function call to initialize app
 init();
